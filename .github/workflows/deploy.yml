@@ -6,6 +6,8 @@ on:
   push:
     branches:
       - main
+  repository_dispatch:
+    types: [app_storybook_updated]
 jobs:
   Deploy-Production:
     runs-on: ubuntu-latest
